@@ -1,6 +1,32 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  plugins: [react()],
-})
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>پخش کننده تلویزیون آنلاین LG WebOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lg: {
+                bg: '#121212',
+                surface: '#1E1E1E',
+                accent: '#A50034',
+                text: '#E0E0E0'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background-color: #121212; color: #E0E0E0; margin: 0; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
